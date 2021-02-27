@@ -1,0 +1,22 @@
+<div class="parallax-container valign-wrapper">
+    
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">@TextOnPhoto</h5>
+        </div>
+      </div>
+    </div>
+    
+    <div class="parallax">
+      <img src="@Photo" alt="@TextOnPhoto">
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Photo { get; set; } = "assets/background1.jpg";
+    
+    [Parameter]
+    public string TextOnPhoto {get; set; } = "Nice to see you";  
+}
